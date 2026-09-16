@@ -1,24 +1,33 @@
-#Aqui se define el porcentaje de comision que le toca dependiendo del monto de la venta
-def porcentage_of_commission (Sales):
-  if Sales >= 50000:
-   return  0.10
-  elif Sales >= 25000:
-   return 0.07
-  elif Sales >= 10000:
-   return 0.05
-  else:
-    return 0.03
-  
-  #Aqui se calcula el total de la comision
+# Aquí se define el porcentaje de comisión que corresponde según el monto de ventas.
+def percentage_of_commission(sales):
+    if sales >= 50000:
+        return 0.10
+    elif sales >= 25000:
+        return 0.07
+    elif sales >= 10000:
+        return 0.05
+    else:
+        return 0.03
 
-def Total_of_the_Commission (Sales):
-  return Sales * porcentage_of_commission(Sales)
-#Aqui se calcula el bono solo si la venta es mayor a 70000
-def calculate_bonus (sales):
-  if sales >= 70000:
-    bonus = 1500
-  else:
-    return 0
-#Aqui se calcula el total obtenido en comisiones y en bonos de el vendedor
-def sellers_total_of_the_commission(Total_of_the_Commission, calculate_bonus):
-  return Total_of_the_Commission + calculate_bonus  
+
+# Aquí se calcula el valor de la comisión del vendedor.
+def total_of_the_commission(sales):
+    percentage = percentage_of_commission(sales)
+    commission = sales * percentage
+    return commission
+
+
+# Aquí se calcula el bono si el vendedor alcanza o supera la meta de 70000.
+def calculate_bonus(sales):
+    if sales >= 70000:
+        bonus = 1500
+    else:
+        bonus = 0
+
+    return bonus
+
+
+# Aquí se calcula el ingreso total obtenido entre comisión y bono.
+def sellers_total_income(commission, bonus):
+    total_income = commission + bonus
+    return total_income
