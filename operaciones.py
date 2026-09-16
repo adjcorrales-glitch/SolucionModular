@@ -1,45 +1,45 @@
 # operaciones.py
 
 def validate_sales(sales):
-    """
-    Validates that the sales amount is not negative.
+    """|
+    Valida que el importe de venta no sea negativo.
     """
     return sales >= 0
 
 
 def validate_name(name):
     """
-    Validates that the seller's name is not empty.
+    validar que el nombre del vendedor no esté vacío.
     """
     return name.strip() != ""
 
 
 def get_sales_category(sales):
     """
-    Returns the sales category based on the sales amount.
+    Devuelve la venta de ventas basada en el monto de ventas.
     """
     if sales >= 50000:
-        return "Top Sales"
+        return "ventas superiores"
     elif sales >= 25000:
-        return "High Sales"
+        return "ventas altas"
     elif sales >= 10000:
-        return "Medium Sales"
+        return "ventas medias"
     else:
-        return "Low Sales"
+        return "ventas bajas"
 
 
 def format_money(amount):
     """
-    Formats an amount as currency.
+    Formatea un monto como moneda.
     """
     return f"${amount:,.2f}"
 
 
 def create_seller_record(name, sales):
     """
-    Creates a seller record using a dictionary.
+    Crea un registro de vendedor utilizando un diccionario.
     """
     return {
-        "name": name,
-        "sales": sales
+        "nombre por favor: ": name,
+        "ventas realizadas: ": sales
     }
