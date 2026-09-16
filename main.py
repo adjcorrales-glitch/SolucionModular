@@ -1,5 +1,6 @@
 # Caso 1: Gestión de ventas y comisiones
 import validaciones
+import calculos
 
 """
 Una empresa comercial necesita una herramienta para calcular las comisiones de sus vendedores al finalizar el mes.
@@ -13,6 +14,10 @@ def main():
     #Ingresar Datos
 
     #Relizar cálculos
+    print(calculos.porcentage_of_commission())
+    print(calculos.Total_of_the_Commission())
+    print(calculos.calculate_bonus())
+    print(calculos.sellers_total_of_the_commission())
 
     #Mostrar Resultados
-    validaciones.ask_name()
+    print(validaciones.ask_name())
