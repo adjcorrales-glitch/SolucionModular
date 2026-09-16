@@ -1,6 +1,7 @@
 # Caso 1: Gestión de ventas y comisiones
+import validaciones
 
-"""""
+"""
 Una empresa comercial necesita una herramienta para calcular las comisiones de sus vendedores al finalizar el mes.
 
 Cada vendedor registra el monto total de sus ventas. La empresa aplica diferentes porcentajes de comisión dependiendo
@@ -14,3 +15,4 @@ def main():
     #Relizar cálculos
 
     #Mostrar Resultados
+    validaciones.ask_name()
