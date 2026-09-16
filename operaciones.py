@@ -44,4 +44,4 @@ def create_seller_record(name, sales):
         "ventas realizadas: ": sales
     }
     
-    #hjhjj
+    
