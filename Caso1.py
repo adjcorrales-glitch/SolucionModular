@@ -1,1 +1,0 @@
-#Cada vendedor registra el monto total de sus ventas. La empresa aplica diferentes porcentajes de comisión dependiendo del nivel de ventas alcanzado. Además, algunos vendedores reciben un bono adicional cuando superan una meta mensual.
